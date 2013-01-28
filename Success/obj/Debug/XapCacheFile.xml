@@ -1,20 +1,20 @@
-﻿<xapCache source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\Success.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="28.01.2013 14:44:35">
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="28.01.2013 13:54:20" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Background.png" archivePath="Background.png" lastWriteTime="28.01.2013 13:27:36" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="28.01.2013 13:27:36" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\obj\Debug\Success.dll" archivePath="Success.dll" lastWriteTime="28.01.2013 14:44:34" />
-  <file source="c:\users\usanov_aa\documents\GitHub\GTD-G\packages\SilverlightToolkitWP.4.2012.10.9\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="25.01.2013 15:07:54" />
-  <file source="c:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="19.03.2012 16:29:06" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="29.08.2011 23:47:42" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="29.08.2011 23:47:42" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="29.08.2011 23:12:58" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\icons\appbar.stop.rest.png" archivePath="icons\appbar.stop.rest.png" lastWriteTime="29.08.2011 23:47:42" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="28.01.2013 13:27:36" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="28.01.2013 14:01:24" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="28.01.2013 13:27:36" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="28.01.2013 13:27:36" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="29.08.2011 23:47:42" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="29.08.2011 23:47:42" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="29.08.2011 23:12:58" />
-  <file source="c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.stop.rest.png" archivePath="icons\appbar.stop.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+﻿<xapCache source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Success.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="28.01.2013 14:58:15">
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="28.01.2013 13:54:20" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Background.png" archivePath="Background.png" lastWriteTime="28.01.2013 13:27:36" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="28.01.2013 13:27:36" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.dll" archivePath="Success.dll" lastWriteTime="28.01.2013 14:58:15" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="25.01.2013 15:07:54" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="19.03.2012 16:29:06" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="29.08.2011 23:12:58" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\icons\appbar.stop.rest.png" archivePath="icons\appbar.stop.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="28.01.2013 13:27:36" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="28.01.2013 14:01:24" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="28.01.2013 13:27:36" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="28.01.2013 13:27:36" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="29.08.2011 23:47:42" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="29.08.2011 23:12:58" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.stop.rest.png" archivePath="icons\appbar.stop.rest.png" lastWriteTime="29.08.2011 23:47:42" />
 </xapCache>

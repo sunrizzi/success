@@ -21,3 +21,25 @@ c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\obj\Deb
 c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\obj\Debug\Add.g.i.cs
 c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.check.rest.png
 c:\users\usanov_aa\documents\visual studio 2010\Projects\Success\Success\Bin\Debug\icons\appbar.stop.rest.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\ApplicationIcon.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Background.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.add.rest.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.check.rest.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.favs.addto.rest.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.stop.rest.png
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Success.dll
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Success.pdb
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\AppManifest.xaml
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Success.xap
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\App.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\About.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Add.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Game.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\MainPage.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Settings.g.i.cs
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.g.resources
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.dll
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.pdb
+C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\XapCacheFile.xml
