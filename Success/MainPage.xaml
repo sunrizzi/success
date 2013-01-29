@@ -16,9 +16,9 @@
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Button Name="StartGame" Content="Играть" Margin="5,212,5,478" BorderThickness="2" Height="110" Click="StartGame_Click"/>
-        <Button Name="ResetScore" Content="Сброс достижений" Margin="5,335,5,355" BorderThickness="2" Click="ResetScore_Click"/>
-        <Button Name="Settings" Content="Настройки" Margin="5,458,5,232" BorderThickness="2" Height="110" Click="Settings_Click"/>
-        <Button Name="About" Content="Об игре" Height="110" Margin="5,583,5,107" BorderThickness="2" Click="About_Click"/>
+        <Button Name="Settings" Content="Настройки" Margin="5,335,5,355" BorderThickness="2" Click="Settings_Click"/>
+        <Button Name="About" Content="Об игре" Margin="5,458,5,232" BorderThickness="2" Height="110" Click="About_Click"/>
+  
     </Grid>
  
     <!--Пример кода, иллюстрирующий использование ApplicationBar-->

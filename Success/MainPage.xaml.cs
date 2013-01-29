@@ -17,10 +17,7 @@ namespace Success
             NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
         }
 
-        private void ResetScore_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Тут будет сброс настроек");
-        }
+       
 
         private void Settings_Click(object sender, RoutedEventArgs e)
         {

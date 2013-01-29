@@ -44,3 +44,4 @@ C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.dll
 C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.pdb
 C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\XapCacheFile.xml
 C:\Users\usanov_aa\Documents\GitHub\success\Success\obj\Debug\Success.csprojResolveAssemblyReference.cache
+C:\Users\usanov_aa\Documents\GitHub\success\Success\Bin\Debug\icons\appbar.delete.rest.png

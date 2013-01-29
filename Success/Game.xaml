@@ -13,33 +13,49 @@
     mc:Ignorable="d" d:DesignHeight="728" d:DesignWidth="480"
     shell:SystemTray.IsVisible="False"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
-
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="/Back.png"/>
+        </Grid.Background>-->
         <!--Pivot Control-->
-        
-            <!--Pivot item one-->
-            
-               
-                    <ListBox x:Name="FirstListBox" Margin="0" ItemsSource="{Binding Items}" VerticalAlignment="Top" BorderThickness="2" Width="480" Height="550">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
-                                    <TextBlock Text="{Binding}" FontSize="36"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                    <TextBlock HorizontalAlignment="Left" Height="31" Margin="8,0,0,73" TextWrapping="Wrap" Text="Твой счёт:" VerticalAlignment="Bottom" Width="96"/>
-                    <TextBlock Name="Total" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="201,0,196,73" d:LayoutOverrides="Width"/>
-               
-          
+
+        <!--Pivot item one-->
+
+
+        <ListBox x:Name="Bonus" HorizontalAlignment="Right" Height="600" VerticalAlignment="Top" Width="79" Margin="0,10,10,0" ItemsSource="{Binding Items}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
+                        <TextBlock Text="{Binding}" FontSize="30"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!--Pivot item one-->
+
+
+        <ListBox x:Name="FirstListBox" Margin="10,10,122,0" ItemsSource="{Binding firstbox}" VerticalAlignment="Top" BorderThickness="2" Height="600">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
+                        <TextBlock Text="{Binding}" FontSize="30" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock Height="51" Margin="10,0,162,73" TextWrapping="Wrap" Text="Итоговый результат:" VerticalAlignment="Bottom" FontSize="32"/>
+        <TextBlock x:Name="Total" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,10,81" FontSize="32" HorizontalAlignment="Right" Width="79"/>
+
+
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="Добавить" Click="ApplicationBarIconButton_Click"/>
+            <!--<shell:ApplicationBarIconButton IconUri="/icons/appbar.delete.rest.png" Text="Очистить" Click="ApplicationBarIconButton_Click_1"/>-->
             <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>-->
             <shell:ApplicationBar.MenuItems>
                 <!--<shell:ApplicationBarMenuItem Text="Добавить новый" Click="ApplicationBarMenuItem_Click"/>-->
