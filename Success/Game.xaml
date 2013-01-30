@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="False"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot" Background="Beige">
         <!--<Grid.Background>
             <ImageBrush ImageSource="/Back.png"/>
         </Grid.Background>-->
@@ -27,7 +27,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
-                        <TextBlock Text="{Binding}" FontSize="30"/>
+                        <TextBlock Text="{Binding}" FontSize="30" Foreground="DarkRed"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -40,21 +40,22 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
-                        <TextBlock Text="{Binding}" FontSize="30" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding}" FontSize="30" TextWrapping="Wrap" Foreground="DarkRed"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock Height="51" Margin="10,0,162,73" TextWrapping="Wrap" Text="Итоговый результат:" VerticalAlignment="Bottom" FontSize="32"/>
-        <TextBlock x:Name="Total" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,10,81" FontSize="32" HorizontalAlignment="Right" Width="79"/>
+        <TextBlock Height="51" Foreground="DarkRed" Margin="10,0,162,73" TextWrapping="Wrap" Text="Итоговый результат:" VerticalAlignment="Bottom" FontSize="32"/>
+        <TextBlock x:Name="Total" Foreground="DarkRed" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,10,81" FontSize="32" HorizontalAlignment="Right" Width="79"/>
 
 
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="DarkRed">
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="Добавить" Click="ApplicationBarIconButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/icons/appbar.feature.email.rest.png" Text="twitter"/>
             <!--<shell:ApplicationBarIconButton IconUri="/icons/appbar.delete.rest.png" Text="Очистить" Click="ApplicationBarIconButton_Click_1"/>-->
             <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>-->
             <shell:ApplicationBar.MenuItems>

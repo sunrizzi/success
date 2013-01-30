@@ -15,22 +15,17 @@
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Beige">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" MinHeight="728"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,15,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Новое дело:" FontSize="26" Margin="0,0,12,0" Height="50"/>
-            <TextBlock x:Name="DoText" Text="Название:" FontSize="24" Margin="0,0,12,0"/>
-            <TextBox Height="70" Margin="27,10,0,28" x:Name="NameToDo" Width="425" HorizontalAlignment="Left" />
-            <TextBlock x:Name="Cen" Text="Баллы:" FontSize="24" Margin="0,0,12,0"/>
-            <toolkit:ListPicker x:Name="Summ" Margin="41,10,0,28" Width="80" HorizontalAlignment="Left"/>
-
-        </StackPanel>
-
+        <TextBlock x:Name="Cen" Text="Баллы:" Foreground="DarkRed" FontSize="24" Margin="12,293,12,383" Grid.Row="1" HorizontalAlignment="Left" />
+        <TextBox Height="70" Margin="12,153,12,505" x:Name="NameToDo" Width="468" HorizontalAlignment="Left" Grid.Row="1" />
+        <toolkit:ListPicker x:Name="Summ" Margin="25,351,0,252" Width="80" HorizontalAlignment="Left" Grid.Row="1" />
+        <TextBlock x:Name="DoText" Text="Название:" Foreground="DarkRed" FontSize="24" Margin="12,104,12,581" Grid.Row="1" HorizontalAlignment="Left" />
     </Grid>
 
     <!--<phone:PhoneApplicationPage.Resources>
@@ -44,7 +39,7 @@
 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="DarkRed">
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.check.rest.png" Text="Добавить" Click="ApplicationBarMenuItem_Click"/>
             <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>-->
             <shell:ApplicationBar.MenuItems>

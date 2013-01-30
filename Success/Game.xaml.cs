@@ -5,7 +5,6 @@ using Microsoft.Phone.Controls;
 using System.Windows;
 
 
-
 //1)Начинается с 50 очков.
 //2)Игрок вносит успешные или не успешные дела
 //и даёт им оченку в баллах.
@@ -15,8 +14,9 @@ namespace Success
 {
     public partial class Game : PhoneApplicationPage
     {
-
-        public int sum=0;
+        
+        int sum;
+        public string inc;
        
         List<string> firstbox = new List<string>();
         List<string> bonuss = new List<string>();
@@ -24,34 +24,58 @@ namespace Success
         public Game()
         {
             InitializeComponent();
-            Loaded += Game_Loaded;  
+            Loaded += Game_Loaded;
+           
+            
         }
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/Add.xaml", UriKind.Relative));
         }
-  
+
         void Game_Loaded(object sender, RoutedEventArgs e)
-        {            
-            FirstListBox.ItemsSource = firstbox;
-            Bonus.ItemsSource = bonuss;
+        {
+          //  FirstListBox.ItemsSource = firstbox;
+          //  Bonus.ItemsSource = bonuss;
+            sum = 50;
+
+
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            if (IsolatedStorageSettings.ApplicationSettings.Contains("Name") == true)
+           
+            if (IsolatedStorageSettings.ApplicationSettings.Contains("Value") == false)
             {
-                firstbox.Add(IsolatedStorageSettings.ApplicationSettings["Name"].ToString());
+                Total.Text = "50";
+                if (IsolatedStorageSettings.ApplicationSettings.Contains("Name") == true)
+                {
+                    inc = (string)IsolatedStorageSettings.ApplicationSettings["Name"];
+                }
+            }else
+                if (String.CompareOrdinal(IsolatedStorageSettings.ApplicationSettings["Name"].ToString(), inc) == 0)
 
-               int a = (int)IsolatedStorageSettings.ApplicationSettings["Value"];
+                {
 
-                bonuss.Add(IsolatedStorageSettings.ApplicationSettings["Value"].ToString());
-                
-                sum = sum + a;
-                Total.Text = sum.ToString();
-                
-            }
+                    
+
+                }
+                else
+                {
+                    
+                    String name1 = IsolatedStorageSettings.ApplicationSettings["Name"].ToString();
+                    firstbox.Add(name1);
+                    bonuss.Add(IsolatedStorageSettings.ApplicationSettings["Value"].ToString());
+                    sum = sum + (int)IsolatedStorageSettings.ApplicationSettings["Value"];
+                    Total.Text = sum.ToString();
+                }
+           
+
+
+            
+
+
             //if (sum == 0)
             //{
             //    MessageBox.Show("Вы проиграли! Будте собранней!");
@@ -60,5 +84,6 @@ namespace Success
         }
 
        
+
     }
 }

@@ -14,10 +14,10 @@
     shell:SystemTray.IsVisible="False">
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Black">
-        <TextBlock Text="Мои успехи" FontFamily="Calibri" FontSize="32" Foreground="White" HorizontalAlignment="Center" Height="50" Width="170" Margin="155,255,155,495" />
-        <TextBlock Text="TDD-игра для WP" FontFamily="Calibri" Foreground="White" Height="50" Width="170" Margin="155,310,155,439"/>
-        <TextBlock Text="Версия: 0.1 pre alpha" FontFamily="Calibri" FontSize="24" Foreground="White" Height="50" Width="250" />
+    <Grid x:Name="LayoutRoot" Background="Beige">
+        <TextBlock Text="Мои успехи" Foreground="DarkRed" FontFamily="Calibri" FontSize="32" Height="50" Margin="155,257,164,493" />
+        <TextBlock Text="TDD-игра для WP" FontFamily="Calibri" Foreground="DarkRed" Height="50" Width="170" Margin="165,311,145,439"/>
+        <TextBlock Text="Версия: 0.1 pre alpha" FontFamily="Calibri" FontSize="24" Foreground="DarkRed" Height="50" Margin="131,375,129,375" />
         
          </Grid>
  

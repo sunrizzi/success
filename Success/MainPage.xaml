@@ -14,10 +14,10 @@
     shell:SystemTray.IsVisible="False">
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Button Name="StartGame" Content="Играть" Margin="5,212,5,478" BorderThickness="2" Height="110" Click="StartGame_Click"/>
-        <Button Name="Settings" Content="Настройки" Margin="5,335,5,355" BorderThickness="2" Click="Settings_Click"/>
-        <Button Name="About" Content="Об игре" Margin="5,458,5,232" BorderThickness="2" Height="110" Click="About_Click"/>
+    <Grid x:Name="LayoutRoot" Background="Beige">
+        <Button Name="StartGame" Content="Играть" Margin="12,212,12,478" BorderThickness="2" Height="110" Click="StartGame_Click" Foreground="DarkRed"/>
+        <Button Name="Settings" Content="Настройки" Margin="12,335,12,355" BorderThickness="2" Click="Settings_Click" Foreground="DarkRed"/>
+        <Button Name="About" Content="Об игре" Margin="12,458,12,232" BorderThickness="2" Height="110" Click="About_Click" Foreground="DarkRed"/>
   
     </Grid>
  
