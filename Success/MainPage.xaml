@@ -15,9 +15,9 @@
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot" Background="Beige">
-        <Button Name="StartGame" Content="Играть" Margin="12,212,12,478" BorderThickness="2" Height="110" Click="StartGame_Click" Foreground="DarkRed"/>
-        <Button Name="Settings" Content="Настройки" Margin="12,335,12,355" BorderThickness="2" Click="Settings_Click" Foreground="DarkRed"/>
-        <Button Name="About" Content="Об игре" Margin="12,458,12,232" BorderThickness="2" Height="110" Click="About_Click" Foreground="DarkRed"/>
+        <Button Name="StartGame" Content="Играть" Margin="12,212,12,478" BorderThickness="0" Height="110" Click="StartGame_Click" Foreground="DarkRed" FontSize="48"/>
+        <Button Name="Settings" Content="Настройки" Margin="12,335,12,355" BorderThickness="0" Click="Settings_Click" Foreground="DarkRed" FontSize="48"/>
+        <Button Name="About" Content="Об игре" Margin="12,458,12,232" BorderThickness="0" Height="110" Click="About_Click" Foreground="DarkRed" FontSize="48"/>
   
     </Grid>
  

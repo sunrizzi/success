@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using Microsoft.Phone.Controls;
 using System.Windows;
+using System.Windows.Input;
 
 
 //1)Начинается с 50 очков.
@@ -16,55 +17,44 @@ namespace Success
     {
         int[] Cents = { -15, -10, -5, 0, 5, 10, 15 };
         int sum;
-       int inc;
-
         List<string> firstbox = new List<string>();
         List<string> bonuss = new List<string>();
 
         public Game()
         {
             InitializeComponent();
-           // Loaded += Game_Loaded;
+            Loaded += Game_Loaded;
             Summ.ItemsSource = Cents;
             Total.Text = "50";
             sum = 50;
-           
-        }
-
-        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
-        {
-            firstbox.Add(NameToDo.Text.ToString());
-            bonuss.Add(Summ.SelectedItem.ToString());
-            inc = (int)Summ.SelectedItem;
-            sum = sum + inc;
-            Total.Text = sum.ToString();
+            this.NameToDo.KeyUp += new KeyEventHandler(NameToDo_KeyUp);
             FirstListBox.ItemsSource = firstbox;
-            Bonus.ItemsSource = bonuss;
-
-            //if (IsolatedStorageSettings.ApplicationSettings.Contains("Name") == true)
-            //{
-            //    inc = (string)IsolatedStorageSettings.ApplicationSettings["Name"];
-            //    firstbox.Add(inc);
-            //    sum = (int)IsolatedStorageSettings.ApplicationSettings["Value"];
-            //    bonuss.Add(sum.ToString());
-
-            //}
         }
 
-        //void Game_Loaded(object sender, RoutedEventArgs e)
-        //{
-           
-        //}
+        void Game_Loaded(object sender, RoutedEventArgs e)
+        {
 
-        //protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        //{
-           
-            
+        }
 
-        //    base.OnNavigatedTo(e);
-        //}
+        void NameToDo_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                this.Focus();
+                LoadFlush();
+            }
+        }
 
+        void LoadFlush()
+        {
+            string SummString = Summ.SelectedItem.ToString();
+            string NameString = NameToDo.Text.ToString();
+            string FullString = SummString + "    " + NameString;
+            firstbox.Add(FullString);
+            NameToDo.Text = "";
+            sum = sum + (int)Summ.SelectedItem;
+            Total.Text = sum.ToString();
 
-
+        }
     }
 }
