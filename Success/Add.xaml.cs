@@ -31,16 +31,17 @@ namespace Success
 
                 IsolatedStorageSettings.ApplicationSettings.Save();
 
-                NavigationService.GoBack();
-                
+              // NavigationService.GoBack();
+                NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+               
             }
         }
 
-        //protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
-        //{
-        //    MessageBox.Show("А название кто будет заполнять?");
-        //    e.Cancel = true;
-        //    base.OnBackKeyPress(e);
-        //}
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+
+            
+            base.OnBackKeyPress(e);
+        }
     }
 }

@@ -14,76 +14,57 @@ namespace Success
 {
     public partial class Game : PhoneApplicationPage
     {
-        
+        int[] Cents = { -15, -10, -5, 0, 5, 10, 15 };
         int sum;
-        public string inc;
-       
+       int inc;
+
         List<string> firstbox = new List<string>();
         List<string> bonuss = new List<string>();
 
         public Game()
         {
             InitializeComponent();
-            Loaded += Game_Loaded;
+           // Loaded += Game_Loaded;
+            Summ.ItemsSource = Cents;
+            Total.Text = "50";
+            sum = 50;
            
-            
         }
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Add.xaml", UriKind.Relative));
+            firstbox.Add(NameToDo.Text.ToString());
+            bonuss.Add(Summ.SelectedItem.ToString());
+            inc = (int)Summ.SelectedItem;
+            sum = sum + inc;
+            Total.Text = sum.ToString();
+            FirstListBox.ItemsSource = firstbox;
+            Bonus.ItemsSource = bonuss;
+
+            //if (IsolatedStorageSettings.ApplicationSettings.Contains("Name") == true)
+            //{
+            //    inc = (string)IsolatedStorageSettings.ApplicationSettings["Name"];
+            //    firstbox.Add(inc);
+            //    sum = (int)IsolatedStorageSettings.ApplicationSettings["Value"];
+            //    bonuss.Add(sum.ToString());
+
+            //}
         }
 
-        void Game_Loaded(object sender, RoutedEventArgs e)
-        {
-          //  FirstListBox.ItemsSource = firstbox;
-          //  Bonus.ItemsSource = bonuss;
-            sum = 50;
-
-
-        }
-
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
+        //void Game_Loaded(object sender, RoutedEventArgs e)
+        //{
            
-            if (IsolatedStorageSettings.ApplicationSettings.Contains("Value") == false)
-            {
-                Total.Text = "50";
-                if (IsolatedStorageSettings.ApplicationSettings.Contains("Name") == true)
-                {
-                    inc = (string)IsolatedStorageSettings.ApplicationSettings["Name"];
-                }
-            }else
-                if (String.CompareOrdinal(IsolatedStorageSettings.ApplicationSettings["Name"].ToString(), inc) == 0)
+        //}
 
-                {
-
-                    
-
-                }
-                else
-                {
-                    
-                    String name1 = IsolatedStorageSettings.ApplicationSettings["Name"].ToString();
-                    firstbox.Add(name1);
-                    bonuss.Add(IsolatedStorageSettings.ApplicationSettings["Value"].ToString());
-                    sum = sum + (int)IsolatedStorageSettings.ApplicationSettings["Value"];
-                    Total.Text = sum.ToString();
-                }
+        //protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        //{
            
-
-
             
 
+        //    base.OnNavigatedTo(e);
+        //}
 
-            //if (sum == 0)
-            //{
-            //    MessageBox.Show("Вы проиграли! Будте собранней!");
-            //}
-            base.OnNavigatedTo(e);
-        }
 
-       
 
     }
 }

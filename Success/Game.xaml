@@ -23,7 +23,7 @@
         <!--Pivot item one-->
 
 
-        <ListBox x:Name="Bonus" HorizontalAlignment="Right" Height="600" VerticalAlignment="Top" Width="79" Margin="0,10,10,0" ItemsSource="{Binding Items}">
+        <ListBox x:Name="Bonus" HorizontalAlignment="Right" Height="500" VerticalAlignment="Top" Width="79" Margin="0,10,10,0" ItemsSource="{Binding Items}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
@@ -36,7 +36,7 @@
         <!--Pivot item one-->
 
 
-        <ListBox x:Name="FirstListBox" Margin="10,10,122,0" ItemsSource="{Binding firstbox}" VerticalAlignment="Top" BorderThickness="2" Height="600">
+        <ListBox x:Name="FirstListBox" Margin="10,10,122,0" ItemsSource="{Binding firstbox}" VerticalAlignment="Top" BorderThickness="2" Height="500">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="50">
@@ -45,8 +45,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock Height="51" Foreground="DarkRed" Margin="10,0,162,73" TextWrapping="Wrap" Text="Итоговый результат:" VerticalAlignment="Bottom" FontSize="32"/>
-        <TextBlock x:Name="Total" Foreground="DarkRed" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,10,81" FontSize="32" HorizontalAlignment="Right" Width="79"/>
+        <TextBlock Height="51" Foreground="DarkRed" Margin="10,0,162,112" TextWrapping="Wrap" Text="Итоговый результат:" VerticalAlignment="Bottom" FontSize="32"/>
+        <TextBlock x:Name="Total" Foreground="DarkRed" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,12,112" FontSize="32" HorizontalAlignment="Right" Width="79" Height="51" />
+        <TextBox Height="70" Margin="0,658,0,0" x:Name="NameToDo" Width="358" HorizontalAlignment="Left" />
+        <toolkit:ListPicker x:Name="Summ" Margin="388,658,0,12" Width="80" HorizontalAlignment="Left" />
 
 
     </Grid>
@@ -54,7 +56,7 @@
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="DarkRed">
-            <shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="Добавить" Click="ApplicationBarIconButton_Click"/>
+           <shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="Добавить" Click="ApplicationBarIconButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.feature.email.rest.png" Text="twitter"/>
             <!--<shell:ApplicationBarIconButton IconUri="/icons/appbar.delete.rest.png" Text="Очистить" Click="ApplicationBarIconButton_Click_1"/>-->
             <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>-->
