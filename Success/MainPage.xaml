@@ -11,26 +11,51 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="False">
-
+    shell:SystemTray.IsVisible="False" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Beige">
-        <Button Name="StartGame" Content="Играть" Margin="12,212,12,478" BorderThickness="0" Height="110" Click="StartGame_Click" Foreground="DarkRed" FontSize="48"/>
-        <Button Name="Settings" Content="Настройки" Margin="12,335,12,355" BorderThickness="0" Click="Settings_Click" Foreground="DarkRed" FontSize="48"/>
-        <Button Name="About" Content="Об игре" Margin="12,458,12,232" BorderThickness="0" Height="110" Click="About_Click" Foreground="DarkRed" FontSize="48"/>
-  
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="/Back.png"/>
+        </Grid.Background>-->
+        <!--Pivot Control-->
+
+        <!--Pivot item one-->
+
+        <!--Pivot item one-->
+
+
+        <ListBox x:Name="FirstListBox" Margin="7,150,13,0" ItemsSource="{Binding firstbox}" VerticalAlignment="Top" BorderThickness="2" Height="496">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel x:Name="to-do" Margin="0,0,0,17" Width="432" Height="45">
+                        <TextBlock Text="{Binding}" FontSize="30" TextWrapping="Wrap" Foreground="White"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock x:Name="Total" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,13,10" FontSize="32" Height="51" HorizontalAlignment="Right" Width="105" />
+        <TextBox Margin="0,2,0,648" x:Name="NameToDo" Width="358" HorizontalAlignment="Left" />
+        <toolkit:ListPicker x:Name="Summ" Margin="358,1,0,654" Width="111" HorizontalAlignment="Left"  >
+
+
+        </toolkit:ListPicker>
+        <Button Content="Сделал!" Margin="2,74,-1,0" VerticalAlignment="Top" Name="StartBt" Click="StartBt_Click"/>
+
+
     </Grid>
- 
-    <!--Пример кода, иллюстрирующий использование ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Кнопка 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Кнопка 2"/>
+            <shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="Test"/>
+            <shell:ApplicationBarIconButton IconUri="/icons/appbar.delete.rest.png" Text="Test"/>
+
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="Элемент меню 1"/>
-                <shell:ApplicationBarMenuItem Text="Элемент меню 2"/>
+                <shell:ApplicationBarMenuItem Text="Добавить новый"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

@@ -4,6 +4,11 @@ using Microsoft.Phone.Controls;
 using System.ComponentModel;
 using System.Windows.Controls.Primitives;
 using System.Threading;
+using Microsoft.Phone.Shell;
+using System.Linq;
+using System.Windows.Input;
+
+
 
 namespace Success
 {
@@ -11,6 +16,12 @@ namespace Success
     {
         BackgroundWorker bkworker;
         Popup myPopup;
+        int[] Cents = { -15, -10, -5, 0, 5, 10, 15 };
+        int sum;
+
+        string[] GItems;
+
+        string FullString;
         // Конструктор
         public MainPage()
         {
@@ -18,30 +29,80 @@ namespace Success
             bkworker = new BackgroundWorker();
             myPopup = new Popup() { IsOpen = true, Child = new SplashLog() };
             RunBackroundWorker();
+
+
+            Loaded += Game_Loaded;
+            Summ.ItemsSource = Cents;
+            Total.Text = "100";
+            sum = 100;
+
+            this.NameToDo.KeyUp += new KeyEventHandler(NameToDo_KeyUp);
+
         }
 
-        private void StartGame_Click(object sender, RoutedEventArgs e)
+        void Game_Loaded(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+            //  FirstListBox.ItemsSource = GItems;
         }
 
-       
-
-        private void Settings_Click(object sender, RoutedEventArgs e)
+        void NameToDo_KeyUp(object sender, KeyEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
+            if (e.Key == Key.Enter)
+            {
+                this.Focus();
+                LoadFlush();
+            }
         }
 
-        private void About_Click(object sender, RoutedEventArgs e)
+        void LoadFlush()
         {
-            NavigationService.Navigate(new Uri("/About.xaml", UriKind.Relative));
+
+
         }
+
+        private void StartBt_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(NameToDo.Text.ToString()))
+            {
+                MessageBox.Show("Нет названия!");
+
+            }
+            else
+            {
+                FullString = Summ.SelectedItem.ToString() + "    " + NameToDo.Text.ToString();
+                FirstListBox.Items.Add(FullString);
+
+                NameToDo.Text = "";
+                sum = sum + (int)Summ.SelectedItem;
+                Total.Text = sum.ToString();
+
+            }
+
+
+        }
+
+
+        public void TileUpdate()
+        {
+
+
+            var apptile = ShellTile.ActiveTiles.First();
+            var appTileData = new StandardTileData();
+            appTileData.BackContent = "Баллы: ";
+            appTileData.Count = 0;
+            appTileData.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
+
+
+            apptile.Update(appTileData);
+        }
+
+
 
         private void RunBackroundWorker()
         {
             bkworker.DoWork += ((s, args) =>
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(1000);
             });
 
             bkworker.RunWorkerCompleted += ((s, args) =>
