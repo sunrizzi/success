@@ -35,8 +35,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock x:Name="Total" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,13,10" FontSize="32" Height="51" HorizontalAlignment="Right" Width="105" />
-        <TextBox Margin="0,2,0,648" x:Name="NameToDo" Width="358" HorizontalAlignment="Left" />
-        <toolkit:ListPicker x:Name="Summ" Margin="358,1,0,654" Width="111" HorizontalAlignment="Left"  >
+        <TextBox Margin="121,3,0,650" x:Name="NameToDo" Width="358" HorizontalAlignment="Left" />
+        <toolkit:ListPicker x:Name="Summ" Margin="13,6,0,649" Width="111" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment"  >
 
 
         </toolkit:ListPicker>
